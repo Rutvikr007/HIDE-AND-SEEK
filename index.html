@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hide&Seek</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>HIDE & SEEK</li>
+        </ul>
+    </nav>
+    <div class="perspective gameContainer">
+        <div class="Container">
+            <div id="id1" class="grid-item">1</div>
+        <div id="id2" class="grid-item">2</div>
+        <div id="id3" class="grid-item">3</div>  
+        <div id="id4" class="grid-item">4</div>
+        <div id="id5" class="grid-item">5</div>
+        <div id="id6" class="grid-item">6</div>
+        <div id="id7" class="grid-item">7</div>
+        <div id="id8" class="grid-item">8</div>
+        <div id="id9"  class="grid-item">9</div>
+        <div id="id10" class="grid-item">10</div>
+        <div id="id11" class="grid-item">11</div>
+        <div id="id12" class="grid-item">12</div>
+        <div id="id13" class="grid-item">13</div>
+        <div id="id14" class="grid-item">14</div>
+        <div id="id15" class="grid-item">15</div>
+        <div id="id16" class="grid-item">16</div>
+        <div id="id14" class="grid-item">17</div>
+        <div id="id15" class="grid-item">18</div>
+        <div id="id16" class="grid-item">19</div>
+        <div id="id14" class="grid-item">20</div>
+        <div id="id15" class="grid-item">21</div>
+        <div id="id16" class="grid-item">22</div>
+        <div id="id14" class="grid-item">23</div>
+        <div id="id15" class="grid-item">24</div>
+        <div id="id16" class="grid-item">25</div>
+        <div id="id11" class="grid-item">26</div>
+        <div id="id12" class="grid-item">27</div>
+        <div id="id13" class="grid-item">28</div>
+        <div id="id14" class="grid-item">29</div>
+        <div id="id15" class="grid-item">30</div>
+        <div id="id16" class="grid-item">31</div>
+        <div id="id14" class="grid-item">32</div>
+        <div id="id15" class="grid-item">33</div>
+        <div id="id16" class="grid-item">34</div>
+        <div id="id14" class="grid-item">35</div>
+        <div id="id15" class="grid-item">36</div>
+            
+
+        </div>
+        
+        <div class="gameInfo">
+            <div id="text">Guess The location <input id="inp1" name="inp1" placeholder="Enter From 1to 36"  /></div><br/>
+            <button id="b1" onclick="fun();document.getElementById('lets-go').play();">Guess</button>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2 >WINNER!! 🥳</h2>
+              <a class="close" href="index.html">×</a>
+              <div class="content">
+                
+                  
+          <div class="content">
+                
+                  <div class="coupon">
+                      <div class="container">
+                        <h3>Guess Game</h3>
+                      </div>
+                      <img src="amazon.png" alt="Avatar" style="width:100%;">
+                      <div class="container" style="background-color:white">
+                        <h2><b>70% OFF YOUR PURCHASE</b></h2> 
+                        <p id="accuracy">You Were Able to successfully find all the gifts in the grid in the level 1</p>
+                      </div>
+                      <div class="container">
+                        <p>Use Promo Code: <span class="promo">N0H212</span></p>
+                        <p class="expire">Expires: Jan 3,2022</p>
+                      </div>
+                    </div>
+
+
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-image: url('3.jpg');
+        }
+        nav{
+            background-color: rgb(22, 231, 85);
+            color:white;
+            height:62px;
+            font-size: 4vw;
+            display: flex;
+            align-items: center;
+            padding: 0px 37px;
+            font-family: 'Bungee Spice', cursive;
+
+
+
+        }
+        nav ul{
+            list-style: none;
+
+        }
+        /* .perspective{
+            perspective: 50rem;
+
+        } */
+        .gameContainer{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            
+
+
+        }
+        .Container{
+            display: grid;
+            grid-template-columns: repeat(7, 7vw);
+            grid-template-rows: repeat(7, 7vw);
+            font-family: 'Bungee Spice', cursive;
+            /* transform: rotateX(50deg); */
+            
+            
+            
+
+
+        }
+        .bax{
+            font-size: 2vw;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .box{
+            border: 1px solid black;
+            font-size: 2vw;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            background-color: rgb(160, 139, 139);
+            margin:2px;
+           
+            box-shadow: 0 3px 10px rgb(216, 95, 216);
+            animation:animate 1000ms linear infinite;
+
+            align-items: center;
+            transform-style: preserve-3d;
+        }
+        @keyframes animate {
+            0%{
+                background-color: red;
+            }
+            20%{
+                background-color: rgb(255, 251, 0);
+            }
+            40%{
+                background-color: rgb(81, 255, 0);
+            }
+            60%{
+                background-color: rgb(0, 225, 255);
+            }
+            80%{
+                background-color: rgb(76, 0, 255);
+            }
+            100%{
+                background-color: rgb(255, 0, 170);
+            }
+
+            
+        }
+        .box:hover{
+            background-color: antiquewhite;
+            
+            
+            
+        }
+        .in{
+            margin: 10px;
+            width: 50px;
+            height: 25px;
+        }
+        .gameInfo{
+        
+            
+    
+            
+            
+        }
+        .Guess{
+            width: 10vw;
+            height: 4vw;
+            font-size: 3.2vh;
+            color: rgba(224, 16, 16, 0.87);
+            border: 1px solid aqua;
+            border-radius: 5px;
+            
+            cursor: pointer;
+            background-color: aquamarine;
+
+        }
+        .Guess:hover{}
+            
+            
+     
+    </style>
+    <!-- <script>
+        
+
+
+var grid_arr=["a1","b1","c1","d1","e1","f1","a2","b2","c2","d2","e2","f2","a3","b3","c3","d3","e3","f3","a4","b4","c4","d4","e4","f4","a5","b5","c5","d5","e5","f5","a6","b6","c6","d6","e6","f6"];
+document.getElementById("guess_btn").addEventListener("click",function(){
+
+
+      
+      var clc=  document.getElementById("text_box").value;
+
+
+    console.log(clc);
+    console.log(grid_arr);
+    
+
+    
+    
+var i=0;
+for(i=0;i<36;i++){
+    if(clc==grid_arr[i]){
+
+        console.log(i);
+
+        var img=document.getElementById(grid_arr[i]);
+        var x1=Math.floor(Math.random()*3);
+        console.log(grid_arr[i]);
+        
+
+
+
+    img.innerHTML="&#127873";
+
+    }}
+
+
+})
+const startbtn=document.querySelector('#start_btn')
+const boxes= document.querySelectorAll('.box')
+console.log(boxtext)
+// let running=false
+
+function randomgift(){
+    var x1=Math.floor(Math.random()*3);
+
+    console.log(grid_arr[x1]);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,124 @@
+@media only screen and(min-width:500px) {
+    .one{
+        position: absolute; 
+        left: 250px; 
+        top: 225px;
+    }
+}
+    /* #two{
+        position: absolute; left: 250px; top: 615px;
+
+
+    }
+    #three{
+        position: absolute; left: 250px; top: 625px;
+
+    }
+    #four{
+        position: absolute; left: 250px; top: 625px;
+
+    }
+    #five{
+        position: absolute; left: 250px; top: 625px;
+
+    }
+    #six{
+        position: absolute; left: 250px; top: 625px;
+
+    } */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+            
+    body{
+        background-image: url('3.jpg');
+    }
+    nav{
+        background-color: rgb(22, 231, 85);
+        color:white;
+        height:62px;
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+        padding: 0px 37px;
+        font-family: 'Bungee Spice', cursive;
+
+
+
+    }
+    nav ul{
+        list-style: none;
+
+    }
+    .gameContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        
+
+
+    }
+    .Container{
+        display: grid;
+        grid-template-columns: repeat(6, 7vw);
+        grid-template-rows: repeat(6, 7vw);
+        font-family: 'Bungee Spice', cursive;
+        
+        
+        
+
+
+    }
+    .box{
+        border: 1px solid black;
+        font-size: 2vw;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: rgb(112, 109, 109);
+        margin:2px;
+       
+        box-shadow: 0 3px 10px rgb(216, 95, 216);
+
+        align-items: center;
+        transform-style: preserve-3d;
+    }
+    .box:hover{
+        background-color: antiquewhite;
+        
+        
+        
+    }
+    .in{
+        margin: 10px;
+        width: 50px;
+        height: 25px;
+    }
+    .gameInfo{
+    
+        
+
+        
+        
+    }
+    .Guess{
+        width: 10vw;
+        height: 4vw;
+        font-size: 3.2vh;
+        color: rgba(224, 16, 16, 0.87);
+        border: 1px solid aqua;
+        border-radius: 5px;
+        
+        cursor: pointer;
+        background-color: aquamarine;
+
+    }
+    .Guess:hover{
+        
+    }
+    

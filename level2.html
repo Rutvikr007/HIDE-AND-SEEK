@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide&Seek</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>HIDE & SEEK</li>
+        </ul>
+    </nav>
+    <div class="gameContainer">
+        <div class="Container">
+            <div class="bax"><span class="boxtext"></span></div>
+            <div class="bax"><span class="boxtext">A</span></div>
+            <div class="bax"><span class="boxtext">B</span></div>
+            <div class="bax"><span class="boxtext">C</span></div>
+            <div class="bax"><span class="boxtext">D</span></div>
+            <div class="bax"><span class="boxtext">1</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="bax"><span class="boxtext">2</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="bax"><span class="boxtext">3</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="bax"><span class="boxtext">4</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            <div class="box"><span class="boxtext">MISS</span></div>
+            
+
+        </div>
+        
+        <div class="gameInfo">
+            <input class="in" type="text">
+            <button class="Guess">Guess</button>
+        </div>
+
+
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-image: url('3.jpg');
+        }
+        nav{
+            background-color: rgb(22, 231, 85);
+            color:white;
+            height:62px;
+            font-size: 4vw;
+            display: flex;
+            align-items: center;
+            padding: 0px 37px;
+            font-family: 'Bungee Spice', cursive;
+
+
+
+        }
+        nav ul{
+            list-style: none;
+
+        }
+        .gameContainer{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            
+
+
+        }
+        .Container{
+            display: grid;
+            grid-template-columns: repeat(5, 7vw);
+            grid-template-rows: repeat(5, 7vw);
+            font-family: 'Bungee Spice', cursive;
+            
+            
+            
+
+
+        }
+        .bax{
+            font-size: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 1px solid black;
+            font-size: 2vw;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            background-color: rgb(112, 109, 109);
+            margin:2px;
+           
+            box-shadow: 0 3px 10px rgb(216, 95, 216);
+
+            align-items: center;
+            transform-style: preserve-3d;
+        }
+        .box:hover{
+            background-color: antiquewhite;
+            
+            
+            
+        }
+        .in{
+            margin: 10px;
+            width: 50px;
+            height: 25px;
+        }
+        .gameInfo{
+        
+            
+    
+            
+            
+        }
+        .Guess{
+            width: 10vw;
+            height: 4vw;
+            font-size: 3.2vh;
+            color: rgba(224, 16, 16, 0.87);
+            border: 1px solid aqua;
+            border-radius: 5px;
+            
+            cursor: pointer;
+            background-color: aquamarine;
+
+        }
+        .Guess:hover{
+            
+        }
+        
+    </style>
+    <script>
+        
+    </script>
+</body>
+</html>
